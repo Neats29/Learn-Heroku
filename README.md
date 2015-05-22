@@ -11,7 +11,7 @@ Heroku is a cloud service that hosts your app. You can do this for free if you h
 
 ###How?
 
-You can deply your app using the Heroku GUI but that's not cool. We're gonna use the command line.
+You can deploy your app using the Heroku GUI but that's not cool. We're gonna use the command line.
 
 ![](http://s2.quickmeme.com/img/14/14bd39c02c40e7e10a50a68aa2c385359b5097214a97fe131e88d21bf7996198.jpg)
 
