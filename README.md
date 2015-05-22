@@ -57,9 +57,33 @@ The above is fine if you don't have a database, user authentication or are not u
 
 We need to hide our passwords, tokens, secrets etc and ensure that we don't push them to Github but the hosting service would needs them in order to run your app. This is where environmental variables come into place.
 
+If you have a look at the `config.js` file, you will see the following code:
 
+```
+process.env.SOME-VAR
+```
 
+`process` is a global object in Node and `process.env` is an object that contains the user environment, in this case our app. On Heroku we can define `SOME-VAR` and then refer to it in our code like above.
 
+##How?
+
+```
+heroku config:set SOME_VAR=some-car
+```
+You can chain them all in one command like so:
+
+```
+heroku config:set DBUSER="YouAreTheUser" DBPWD="YouOwnThePassword" DBURL="mongodb://YouAreTheUser:YouOwnThePassword@123456.mongolab.com:78910/collectionName?"
+```
+You get the idea.
+To view them:
+```
+heroku config
+```
+If you change your mind:
+```
+heroku config:unset DBUSER
+```
 
 
 
