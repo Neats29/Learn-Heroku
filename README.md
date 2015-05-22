@@ -2,6 +2,9 @@
 
 ##Learn how to host your app on Heroku
 
+###Aims?
+keep this tutorial SHORT and To The POINT. No life stories.
+
 ###What is it?
 
 Heroku is a cloud service that hosts your app. You can do this for free if you have a small app. 
@@ -15,6 +18,13 @@ You can deply your app using the Heroku GUI but that's not cool. We're gonna dep
 ---
 
 Say you've been working on a project all week and you decide to deploy on Friday afternoon. Don't! Sometimes things go smoothly but sometimes and specially if it's your first time, this doesn't happen. Leave enough time for it just in case.
+
+##Dynos
+
+Dynos are like little robots. A single Dyno is Free but once it starts to mate and reproduce, things get expenive. The Dynos run commands, Web dynos for instance take care of HTTP traffic. Without a Dyno, your app won't be deployed but thankfully we only need one to begin with => Free.
+
+This shows that I have 1 Dyno, I'm all good for now.
+![]()
 
 1. Please sign up on Heroku if you haven't already, they are more likely to let you use their service if you do. 
 
@@ -63,7 +73,7 @@ If you have a look at the `config.js` file, you will see the following code:
 process.env.SOME-VAR
 ```
 
-`process` is a global object in Node and `process.env` is an object that contains the user environment, in this case our app. On Heroku we can define `SOME-VAR` and then refer to it in our code like above.
+`process` is a global object in Node.js and `process.env` is an object that contains the user environment, in this case our app. On Heroku we can define `SOME-VAR` and then refer to it in our code like above.
 
 ##How?
 
@@ -85,6 +95,25 @@ If you change your mind:
 heroku config:unset DBUSER
 ```
 
+What else?
+
+We're almost there, now we need to give Heroku some final instructions.
+
+###Procfile
+In their own words: 
+> Procfile is a mechanism for declaring what commands are run by your application’s dynos on the Heroku platform.
+
+***
+Other things to note:
+
+In your server you'd want to add something like the following so it runs in localhost when on your local machine and on Heroku's chosen port when deployed.
+
+```javascript
+var host = 'localhost';
+if (process.env.PORT) host = '0.0.0.0';
+var serverOptions 	= {port: (process.env.PORT || 8000 ), host: host 
+};
+```
 
 
 
