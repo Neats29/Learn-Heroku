@@ -1,0 +1,16 @@
+//This file would normally be under the list of files in your .gitignore file but I have pushed it for demonstration purposes
+
+
+{
+	"database": {
+		"dbuser": "YouAreTheUser",
+		"dbpwd": "YouOwnThePassword",
+		"dburl": "mongodb://YouAreTheUser:YouOwnThePassword@123456.mongolab.com:78910/collectionName?"
+	},
+	
+	"facebook": {
+		"secret": "djfhsdkjfhsd77632764829bdks",
+		"cKey": "34624808106",
+		"cSecret": "sdhjgayda79283742sdhgafkgshfksd"
+	} //you get the point
+}
