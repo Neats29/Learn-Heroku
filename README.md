@@ -69,7 +69,7 @@ heroku open (to view the app in the browser)
 
 The above is fine if you don't have a database, user authentication or are not using any APIs that require tokens and passwords. But then again why won't you use Github pages if that's all you have. It's when you have to deal with credentials (and thus hiding them) that you have to turn to services like Heroku.
 
-We need to hide our passwords, tokens, secrets etc and ensure that we don't push them to Github but the hosting service would needs them in order to run your app. This is where environmental variables come into place.
+We need to hide our passwords, tokens, secrets etc and ensure that we don't push them to Github but the hosting service needs them in order to run your app. This is where environmental variables come into place.
 
 If you have a look at the `config.js` file, you will see the following code:
 
@@ -82,7 +82,7 @@ process.env.SOME-VAR
 ##How?
 
 ```
-heroku config:set SOME_VAR=some-car
+heroku config:set SOME_VAR="some-car"
 ```
 You can chain them all in one command like so:
 
@@ -107,7 +107,7 @@ We're almost there, now we need to give Heroku some final instructions.
 In their own words: 
 > Procfile is a mechanism for declaring what commands are run by your application’s dynos on the Heroku platform.
 
-Please have a look at the Procfile in this repo as an example. All you need is the language, the type of dyno so `web` or `worker` and name of the file that runs your app. The Procfile file needs to be in your root directory. 
+Please have a look at the Procfile in this repo as an example. All you need is the language, the type of dyno so `web` or `worker` and name of the file that runs your app. Also, the Procfile file needs to be in your root directory. 
 
 ###package.json
 
@@ -147,7 +147,7 @@ And to update the git remote:
 git remote rm heroku
 heroku git:remote -a whatever-else-you-like
 ```
-Now you can visit your app at the new url and the old. The old one will no longer work.
+Now you can visit your app at the new url. The old one will no longer work.
 
 ---
 
