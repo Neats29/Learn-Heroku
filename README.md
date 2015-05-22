@@ -21,7 +21,7 @@ Say you've been working on a project all week and you decide to deploy on Friday
 
 ##Dynos
 
-Dynos are like little robots. A single Dyno is Free but once it starts to mate and reproduce, things get expenive. The Dynos run commands, Web dynos for instance take care of HTTP traffic. Without a Dyno, your app won't be deployed but thankfully we only need one to begin with => Free.
+Dynos are like little robots. A single Dyno is Free but once it starts to mate and reproduce, things get expensive. The Dynos run commands, Web dynos for instance take care of HTTP traffic. Without a Dyno, your app won't be deployed but thankfully we only need one to begin with => Free.
 
 This shows that I have 1 Dyno, so I'm all good for now.
 
