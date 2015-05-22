@@ -6,7 +6,7 @@ module.exports = {
 	},
 	facebook : {
 				secret 	: 	process.env.FBSECRET 		|| require('./creds.json').facebook.secret,
-				cKey		: 	process.env.FBCKEY 			|| require('./creds.json').facebook.cKey,
-				cSecret	: 	process.env.FBCSECRET 	|| require('./creds.json').facebook.cSecret,
+				cKey	: 	process.env.FBCKEY 			|| require('./creds.json').facebook.cKey,
+				cSecret	: 	process.env.FBCSECRET 		|| require('./creds.json').facebook.cSecret,
 	},
 };

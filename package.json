@@ -1,0 +1,28 @@
+{
+  "name": "whatever-you-like",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js", //this does the same thing as the line that includes 'app.js'' in the Procfile
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node (or nodemon if you like) app.js"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whatever-you-like"
+  },
+  "author": "",
+  "license": "MIT"
+  },
+  "dependencies": {
+    "hapi": "^8.4.0",
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+  }
+}

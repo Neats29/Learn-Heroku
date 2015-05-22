@@ -1,6 +1,6 @@
-![](https://s3.amazonaws.com/kinlane-productions/api-evangelist/heroku/heroku-logo.png)
+![https://dashboard.heroku.com/](https://s3.amazonaws.com/kinlane-productions/api-evangelist/heroku/heroku-logo.png)
 
-##Learn how to host your app on Heroku
+##Learn how to host your app on [Heroku](https://dashboard.heroku.com/)
 
 ###Aims?
 keep this tutorial SHORT and To The POINT. No life stories.
@@ -11,7 +11,7 @@ Heroku is a cloud service that hosts your app. You can do this for free if you h
 
 ###How?
 
-You can deply your app using the Heroku GUI but that's not cool. We're gonna deploy command line style!
+You can deply your app using the Heroku GUI but that's not cool. We're gonna deploy command line style.
 
 ![](http://s2.quickmeme.com/img/14/14bd39c02c40e7e10a50a68aa2c385359b5097214a97fe131e88d21bf7996198.jpg)
 
@@ -23,10 +23,13 @@ Say you've been working on a project all week and you decide to deploy on Friday
 
 Dynos are like little robots. A single Dyno is Free but once it starts to mate and reproduce, things get expenive. The Dynos run commands, Web dynos for instance take care of HTTP traffic. Without a Dyno, your app won't be deployed but thankfully we only need one to begin with => Free.
 
-This shows that I have 1 Dyno, I'm all good for now.
-![]()
+This shows that I have 1 Dyno, so I'm all good for now.
 
-1. Please sign up on Heroku if you haven't already, they are more likely to let you use their service if you do. 
+![](https://raw.githubusercontent.com/Neats29/Learn-Heroku/master/dynos.png)
+
+##Next
+
+1. Please sign up on Heroku if you haven't already, they are more likely to let you use their service if you do!
 
 
 2. Once you've done that, please come back and run the following commands in your terminal:
@@ -103,6 +106,23 @@ We're almost there, now we need to give Heroku some final instructions.
 In their own words: 
 > Procfile is a mechanism for declaring what commands are run by your application’s dynos on the Heroku platform.
 
+Please have a look at the Procfile in this repo as an example. All you need is the language, the type of dyno so `web` or `worker` and name of the file that runs your app. The Procfile file needs to be in your root directory. 
+
+###package.json
+
+Please also have a look at the package.json file in this repo, the important things to note are the following:
+
+```javascript
+"scripts": {
+    "start": "node (or nodemon if you like) app.js"
+  },
+  "engines": {
+    "node": "0.10.x"
+```
+This is important so that Heroku knows what version of Node.js to run your app in.
+
+
+
 ***
 Other things to note:
 
@@ -114,8 +134,9 @@ if (process.env.PORT) host = '0.0.0.0';
 var serverOptions 	= {port: (process.env.PORT || 8000 ), host: host 
 };
 ```
+---
 
-
+For more information visit the [Heroku Dev Centre](https://devcenter.heroku.com/)
 
 
 
