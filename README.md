@@ -65,11 +65,11 @@ heroku open (to view the app in the browser)
 
 'coz there's more...
 
-#Environmental Variables
+#Environment Variables
 
 The above is fine if you don't have a database, user authentication or are not using any APIs that require tokens and passwords. But then again why won't you use Github pages if that's all you have. It's when you have to deal with credentials (and thus hiding them) that you have to turn to services like Heroku.
 
-We need to hide our passwords, tokens, secrets etc and ensure that we don't push them to Github but the hosting service needs them in order to run your app. This is where environmental variables come into place.
+We need to hide our passwords, tokens, secrets etc and ensure that we don't push them to Github but the hosting service needs them in order to run your app. This is where environment variables come into place.
 
 If you have a look at the `config.js` file, you will see the following code:
 
