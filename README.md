@@ -31,8 +31,9 @@ This shows that I have 1 Dyno, so I'm all good for now.
 
 1. Please sign up on Heroku if you haven't already, they are more likely to let you use their service if you do!
 
+2. Once you've done that, please [install Heroku](https://devcenter.heroku.com/articles/heroku-command#installing-the-heroku-cli)
 
-2. Once you've done that, please come back and run the following commands in your terminal:
+3. Then, come back and run the following commands in your terminal:
 
 ```
 heroku login
