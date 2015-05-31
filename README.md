@@ -19,6 +19,17 @@ You can deploy your app using the Heroku GUI but that's not cool. We're gonna us
 
 Say you've been working on a project all week and you decide to deploy on Friday afternoon. Don't! Sometimes things go smoothly but sometimes and specially if it's your first time, this might not happen. Leave enough time for it just in case.
 
+###Checklist for Deployment
+*Sign-up 
+*Dynos
+*Procfile
+*package.json (including the scripts outlined later in this tutorial)
+*config.js
+*creds.json
+*Environment (config) Variables
+
+---
+
 ##Dynos
 
 Dynos are like little robots. A single Dyno is Free but once it starts to mate and reproduce, things get expensive. The Dynos run commands, Web dynos for instance take care of HTTP traffic. Without a Dyno, your app won't be deployed but thankfully we only need one to begin with => Free.
