@@ -162,7 +162,7 @@ Now you can visit your app at the new url. The old one will no longer work.
 
 ---
 
-For more information visit the [Heroku Dev Centre](https://devcenter.heroku.com/)
+For more information visit the [Heroku Dev Centre](https://devcenter.heroku.com/) and [Node.js Heroku Buildpack Docs](https://github.com/heroku/heroku-buildpack-nodejs#specify-an-npm-version)
 
 
 
