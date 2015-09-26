@@ -20,8 +20,8 @@ You can deploy your app using the Heroku GUI but that's not cool. We're gonna us
 Say you've been working on a project all week and you decide to deploy on Friday afternoon. Don't! Sometimes things go smoothly but sometimes and specially if it's your first time, this might not happen. Leave enough time for it just in case.
 
 ###Checklist for Deployment
--[] Sign-up 
--[] Dynos
+-[ ] Sign-up 
+-[ ] Dynos
 * Procfile
 * package.json (including the scripts outlined later in this tutorial)
 * config.js
