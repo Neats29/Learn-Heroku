@@ -21,12 +21,12 @@ Say you've been working on a project all week and you decide to deploy on Friday
 
 ###Checklist for Deployment
 * [x] Sign-up 
-* [ ] Dynos
-* Procfile
-* package.json (including the scripts outlined later in this tutorial)
-* config.js
-* creds.json
-* Environment (config) Variables
+* [x] Dynos
+* [x] Procfile
+* [x] package.json (including the scripts outlined later in this tutorial)
+* [x] config.js
+* [x] creds.json
+* [x] Environment (config) Variables
 
 ---
 
