@@ -143,7 +143,9 @@ In your server you'd want to add something like the following so it runs in loca
 ```javascript
 var host = 'localhost';
 if (process.env.PORT) host = '0.0.0.0';
-var serverOptions 	= {port: (process.env.PORT || 8000 ), host: host 
+var serverOptions 	= {
+    port: (process.env.PORT || 8000 ), 
+    host: host 
 };
 ```
 
