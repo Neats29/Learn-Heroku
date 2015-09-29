@@ -136,7 +136,7 @@ This is important so that Heroku knows what version of Node.js to run your app i
 
 
 ***
-Other things to note:
+#####Other things to note:
 
 In your server you'd want to add something like the following so it runs in localhost when on your local machine and on Heroku's chosen port when deployed.
 
