@@ -1,6 +1,4 @@
 //This file would normally be under the list of files in your .gitignore file but I have pushed it for demonstration purposes
-
-
 {
 	"database": {
 		"dbuser": "YouAreTheUser",
